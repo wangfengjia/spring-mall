@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.mall.admin.mapper">
+    <resultMap id="BaseResultMap" type="com.mall.admin.entity.AdminUser">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="username" property="username" jdbcType="VARCHAR"/>
+        <id column="password" property="password" jdbcType="VARCHAR"/>
+        <id column="icon" property="icon" jdbcType="VARCHAR"/>
+        <id column="email" property="email" jdbcType="VARCHAR"/>
+        <id column="nick_name" property="nickName" jdbcType="VARCHAR"/>
+        <id column="note" property="note" jdbcType="VARCHAR"/>
+        <id column="login_time" property="loginTime" jdbcType="TIMESTAMP"/>
+        <id column="status" property="status" jdbcType="TINYINT"/>
+        <id column="created_at" property="createdAt" jdbcType="TIMESTAMP"/>
+        <id column="updated_at" property="updatedAt" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, username, password, icon, email, nick_name, note, login_time, status, created_at, updated_at
+    </sql>
+    <select id="getAll" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from admin_user
+    </select>
+    <insert id="insert" parameterType="com.mall.admin.entity.AdminUser">
+        insert into
+            admin_user
+            (username, password, icon, email, nick_name, note, login_time, status, created_at, updated_at)
+        values
+            (#{username}, #{password}, #{icon}, #{email}, #{nickName}, #{note}, #{loginTime}, #{status}, #{createdAts}, #{updated_at})
+    </insert>
+    <delete id="delete" parameterType="java.lang.Long">
+        delete from
+            admin_user
+        where
+            id=#{id}
+    </delete>
+</mapper>

@@ -1,0 +1,62 @@
+GET http://127.0.0.1:9862/admin/user/list
+
+<> 2019-08-18T121120.200.json
+
+###
+
+GET http://127.0.0.1:9862/admin/user/list
+
+<> 2019-08-18T121100.200.json
+
+###
+
+GET http://127.0.0.1:9862/admin/user/logout
+
+<> 2019-08-17T042637.200.json
+
+###
+
+POST http://127.0.0.1:9862/admin/user/login
+
+<> 2019-08-17T042057.200.json
+
+###
+
+GET http://127.0.0.1:9862/admin/user/info
+
+<> 2019-08-17T042036.200.json
+
+###
+
+GET http://localhost:9862/test/index
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-21T121323.200.json
+
+###
+
+POST http://localhost:9862/test/index
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-21T121311.405.json
+
+###
+
+GET http://localhost:9862/test/index
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-21T120944.200.json
+
+###
+
+GET http://localhost:9862/test/index
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-01-21T120535.401.json
+
+###
+
