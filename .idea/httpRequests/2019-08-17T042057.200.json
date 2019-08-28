@@ -1,6 +1,0 @@
-{
-  "code": 100,
-  "message": "Required request body is missing: public com.mall.common.dto.RestResponse com.mall.admin.controller.AdminUserController.login(com.mall.admin.dto.AdminUserLoginParams)",
-  "data": null,
-  "url": "http://127.0.0.1:9862/admin/user/login"
-}

@@ -1,7 +1,0 @@
-{
-  "code": 401,
-  "payload": "Full authentication is required to access this resource",
-  "success": false,
-  "timestamps": 1566101460,
-  "message": "暂未登录或token已经过期"
-}
